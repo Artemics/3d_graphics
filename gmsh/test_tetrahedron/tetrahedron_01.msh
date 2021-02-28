@@ -1,0 +1,28 @@
+// To represent a simple mesh, the minimal sections that should be present in the file are $MeshFormat, $Nodes and $Elements.
+// All the node, element and entity tags (their global identification numbers) should be strictly positive. (Tag 0 is reserved for internal use.)
+
+$MeshFormat
+4.1 0 8
+$EndMeshFormat
+
+$Nodes
+1 4 1 4
+3 1 0 4
+1
+2
+3
+4
+0. 0. 0.
+1. 0. 0.
+0. 1. 0.
+0. 0. 1.
+$EndNodes
+
+$Elements
+1 4 1 4 // 1 entity block, 4 elements total from tag no 1 to 4.
+3 1 2 4 // 1st three-dim entity, element type 2(three-node triangle), 4 elements?
+1 1 2 4
+2 1 3 2
+3 1 4 3
+4 2 3 4
+$EndElements
